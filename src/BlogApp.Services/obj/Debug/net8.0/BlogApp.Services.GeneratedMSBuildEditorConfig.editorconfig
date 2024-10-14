@@ -8,6 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = BlogApp.Services
-build_property.ProjectDir = C:\Users\Luis Felipe\OneDrive\Documentos\GitHub\blog-repositorio-mba\src\BlogApp.Services\
+build_property.ProjectDir = C:\Users\Public\repositório\blog-repositorio-mba\src\BlogApp.Services\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 

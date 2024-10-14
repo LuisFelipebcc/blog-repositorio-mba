@@ -1,0 +1,36 @@
+﻿@model IEnumerable<BlogApp.Domain.Entities.Post>
+
+<h2>Posts</h2>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Título</th>
+            <th>Autor</th>
+            <th>Data</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var post in Model)
+        {
+            <tr>
+                <td>@post.Title</td>
+                <td>@post.Author.FullName</td>
+                <td>@post.PublishedDate.ToString("dd/MM/yyyy")</td>
+                <td>
+                    <a href="/Post/Details/@post.Id" class="btn btn-info">Detalhes</a>
+                    @if (User.Identity.Name == post.AuthorId || User.IsInRole("Admin"))
+                    {
+                        <a href="/Post/Edit/@post.Id" class="btn btn-primary">Editar</a>
+                        <form asp-action="Delete" asp-controller="Post" method="post" class="d-inline">
+                            <input type="hidden" name="id" value="@post.Id" />
+                            <button type="submit" class="btn btn-danger">Excluir</button>
+                        </form>
+                    }
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<a href="/Post/Create" class="btn btn-success">Criar Novo Post</a>

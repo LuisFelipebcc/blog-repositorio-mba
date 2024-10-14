@@ -11,7 +11,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlogApp.Domain", "BlogApp.D
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlogApp.Data", "BlogApp.Data\BlogApp.Data.csproj", "{FE6B1C92-DCAE-44A6-A707-D5A471F3F4BE}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlogApp.Services", "BlogApp.Services\BlogApp.Services.csproj", "{DD0E0B82-0079-4C65-9F18-ACAD2824EB22}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlogApp.Services", "BlogApp.Services\BlogApp.Services.csproj", "{DD0E0B82-0079-4C65-9F18-ACAD2824EB22}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
