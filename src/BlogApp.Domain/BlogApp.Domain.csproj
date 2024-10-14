@@ -10,8 +10,4 @@
     <Compile Remove="Class1.cs" />
   </ItemGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\BlogApp.MVC\BlogApp.MVC.csproj" />
-  </ItemGroup>
-
 </Project>

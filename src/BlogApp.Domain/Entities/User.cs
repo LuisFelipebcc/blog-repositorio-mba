@@ -1,7 +1,4 @@
-﻿using Microsoft.AspNetCore.Identity;
-using System.Collections.Generic;
-
-namespace BlogApp.Domain.Entities
+﻿namespace BlogApp.Domain.Entities
 {
     public class User : IdentityUser
     {
