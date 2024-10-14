@@ -1,12 +1,14 @@
-﻿using System;
+﻿using Microsoft.AspNetCore.Identity;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace BlogApp.Domain.Entities
 {
-    internal class User
+    public class User : IdentityUser
     {
+        public string FullName { get; set; }
+
+        // Relacionamentos
+        public virtual ICollection<Post> Posts { get; set; }
+        public virtual ICollection<Comment> Comments { get; set; }
     }
 }

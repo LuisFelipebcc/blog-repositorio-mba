@@ -7,9 +7,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlogApp.API", "BlogApp.API\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlogApp.MVC", "BlogApp.MVC\BlogApp.MVC.csproj", "{A3EA0B77-97FF-48E4-B607-A05A564B06DF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlogApp.Domain", "BlogApp.Domain\BlogApp.Domain.csproj", "{D448DE82-6C0E-46BD-AF5E-4C7724BE6641}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlogApp.Domain", "BlogApp.Domain\BlogApp.Domain.csproj", "{D448DE82-6C0E-46BD-AF5E-4C7724BE6641}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlogApp.Data", "BlogApp.Data\BlogApp.Data.csproj", "{FE6B1C92-DCAE-44A6-A707-D5A471F3F4BE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlogApp.Data", "BlogApp.Data\BlogApp.Data.csproj", "{FE6B1C92-DCAE-44A6-A707-D5A471F3F4BE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlogApp.Services", "BlogApp.Services\BlogApp.Services.csproj", "{DD0E0B82-0079-4C65-9F18-ACAD2824EB22}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{FE6B1C92-DCAE-44A6-A707-D5A471F3F4BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FE6B1C92-DCAE-44A6-A707-D5A471F3F4BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FE6B1C92-DCAE-44A6-A707-D5A471F3F4BE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DD0E0B82-0079-4C65-9F18-ACAD2824EB22}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD0E0B82-0079-4C65-9F18-ACAD2824EB22}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD0E0B82-0079-4C65-9F18-ACAD2824EB22}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD0E0B82-0079-4C65-9F18-ACAD2824EB22}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,12 +1,15 @@
-﻿using System;
+﻿using BlogApp.Domain.Entities;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace BlogApp.Domain.Interfaces
 {
-    internal interface ICommentRepository
+    public interface ICommentRepository
     {
+        Task<Comment> GetByIdAsync(int id);
+        Task<IEnumerable<Comment>> GetCommentsByPostIdAsync(int postId);
+        Task AddAsync(Comment comment);
+        Task UpdateAsync(Comment comment);
+        Task DeleteAsync(int id);
     }
 }
