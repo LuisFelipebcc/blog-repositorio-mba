@@ -1,17 +1,7 @@
-﻿using Microsoft.AspNetCore.Authentication.JwtBearer;
-using Microsoft.AspNetCore.Builder;
-using Microsoft.AspNetCore.Hosting;
-using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Hosting;
-using Microsoft.IdentityModel.Tokens;
-using System.Text;
+﻿using Microsoft.EntityFrameworkCore;
 using BlogApp.Data;
-using BlogApp.Services;
-using BlogApp.Domain.Interfaces;
-using BlogApp.Data.Repositories;
 using Microsoft.AspNetCore.Identity;
+using BlogApp.Domain.Entities;
 
 public class Startup
 {

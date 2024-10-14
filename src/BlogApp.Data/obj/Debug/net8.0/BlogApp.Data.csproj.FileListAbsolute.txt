@@ -22,3 +22,21 @@ C:\Users\Luis Felipe\source\repos\src\BlogApp.Data\obj\Debug\net8.0\BlogApp.Data
 C:\Users\Luis Felipe\source\repos\src\BlogApp.Data\obj\Debug\net8.0\refint\BlogApp.Data.dll
 C:\Users\Luis Felipe\source\repos\src\BlogApp.Data\obj\Debug\net8.0\BlogApp.Data.pdb
 C:\Users\Luis Felipe\source\repos\src\BlogApp.Data\obj\Debug\net8.0\ref\BlogApp.Data.dll
+C:\Users\Public\repositório\blog-repositorio-mba\src\BlogApp.Data\obj\Debug\net8.0\BlogApp.Data.csproj.AssemblyReference.cache
+C:\Users\Public\repositório\blog-repositorio-mba\src\BlogApp.Data\obj\Debug\net8.0\BlogApp.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Public\repositório\blog-repositorio-mba\src\BlogApp.Data\obj\Debug\net8.0\BlogApp.Data.AssemblyInfoInputs.cache
+C:\Users\Public\repositório\blog-repositorio-mba\src\BlogApp.Data\obj\Debug\net8.0\BlogApp.Data.AssemblyInfo.cs
+C:\Users\Public\repositório\blog-repositorio-mba\src\BlogApp.Data\obj\Debug\net8.0\BlogApp.Data.csproj.CoreCompileInputs.cache
+C:\Users\Public\repositório\blog-repositorio-mba\src\BlogApp.Data\obj\Debug\net8.0\BlogApp.Data.sourcelink.json
+C:\Users\Public\repositório\blog-repositorio-mba\src\BlogApp.Data\obj\Debug\net8.0\BlogApp.Data.dll
+C:\Users\Public\repositório\blog-repositorio-mba\src\BlogApp.Data\obj\Debug\net8.0\refint\BlogApp.Data.dll
+C:\Users\Public\repositório\blog-repositorio-mba\src\BlogApp.Data\obj\Debug\net8.0\BlogApp.Data.pdb
+C:\Users\Public\repositório\blog-repositorio-mba\src\BlogApp.Data\bin\Debug\net8.0\BlogApp.Data.deps.json
+C:\Users\Public\repositório\blog-repositorio-mba\src\BlogApp.Data\bin\Debug\net8.0\BlogApp.Data.runtimeconfig.json
+C:\Users\Public\repositório\blog-repositorio-mba\src\BlogApp.Data\bin\Debug\net8.0\BlogApp.Data.dll
+C:\Users\Public\repositório\blog-repositorio-mba\src\BlogApp.Data\bin\Debug\net8.0\BlogApp.Data.pdb
+C:\Users\Public\repositório\blog-repositorio-mba\src\BlogApp.Data\bin\Debug\net8.0\BlogApp.Domain.dll
+C:\Users\Public\repositório\blog-repositorio-mba\src\BlogApp.Data\bin\Debug\net8.0\BlogApp.Domain.pdb
+C:\Users\Public\repositório\blog-repositorio-mba\src\BlogApp.Data\obj\Debug\net8.0\BlogApp..C6996ECE.Up2Date
+C:\Users\Public\repositório\blog-repositorio-mba\src\BlogApp.Data\obj\Debug\net8.0\BlogApp.Data.genruntimeconfig.cache
+C:\Users\Public\repositório\blog-repositorio-mba\src\BlogApp.Data\obj\Debug\net8.0\ref\BlogApp.Data.dll

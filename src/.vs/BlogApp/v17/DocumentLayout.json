@@ -1,7 +1,44 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Luis Felipe\\OneDrive\\Documentos\\GitHub\\blog-repositorio-mba\\src\\",
-  "Documents": [],
+  "WorkspaceRootPath": "C:\\Users\\Public\\reposit\u00F3rio\\blog-repositorio-mba\\src\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D448DE82-6C0E-46BD-AF5E-4C7724BE6641}|BlogApp.Domain\\BlogApp.Domain.csproj|c:\\users\\public\\reposit\u00F3rio\\blog-repositorio-mba\\src\\blogapp.domain\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D448DE82-6C0E-46BD-AF5E-4C7724BE6641}|BlogApp.Domain\\BlogApp.Domain.csproj|solutionrelative:blogapp.domain\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FE6B1C92-DCAE-44A6-A707-D5A471F3F4BE}|BlogApp.Data\\BlogApp.Data.csproj|c:\\users\\public\\reposit\u00F3rio\\blog-repositorio-mba\\src\\blogapp.data\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FE6B1C92-DCAE-44A6-A707-D5A471F3F4BE}|BlogApp.Data\\BlogApp.Data.csproj|solutionrelative:blogapp.data\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BAD3503E-E3E7-4005-8F63-7AB8218C255D}|BlogApp.API\\BlogApp.API.csproj|c:\\users\\public\\reposit\u00F3rio\\blog-repositorio-mba\\src\\blogapp.api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BAD3503E-E3E7-4005-8F63-7AB8218C255D}|BlogApp.API\\BlogApp.API.csproj|solutionrelative:blogapp.api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A3EA0B77-97FF-48E4-B607-A05A564B06DF}|BlogApp.MVC\\BlogApp.MVC.csproj|c:\\users\\public\\reposit\u00F3rio\\blog-repositorio-mba\\src\\blogapp.mvc\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A3EA0B77-97FF-48E4-B607-A05A564B06DF}|BlogApp.MVC\\BlogApp.MVC.csproj|solutionrelative:blogapp.mvc\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A3EA0B77-97FF-48E4-B607-A05A564B06DF}|BlogApp.MVC\\BlogApp.MVC.csproj|c:\\users\\public\\reposit\u00F3rio\\blog-repositorio-mba\\src\\blogapp.mvc\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A3EA0B77-97FF-48E4-B607-A05A564B06DF}|BlogApp.MVC\\BlogApp.MVC.csproj|solutionrelative:blogapp.mvc\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FE6B1C92-DCAE-44A6-A707-D5A471F3F4BE}|BlogApp.Data\\BlogApp.Data.csproj|c:\\users\\public\\reposit\u00F3rio\\blog-repositorio-mba\\src\\blogapp.data\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FE6B1C92-DCAE-44A6-A707-D5A471F3F4BE}|BlogApp.Data\\BlogApp.Data.csproj|solutionrelative:blogapp.data\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FE6B1C92-DCAE-44A6-A707-D5A471F3F4BE}|BlogApp.Data\\BlogApp.Data.csproj|c:\\users\\public\\reposit\u00F3rio\\blog-repositorio-mba\\src\\blogapp.data\\repositories\\commentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FE6B1C92-DCAE-44A6-A707-D5A471F3F4BE}|BlogApp.Data\\BlogApp.Data.csproj|solutionrelative:blogapp.data\\repositories\\commentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FE6B1C92-DCAE-44A6-A707-D5A471F3F4BE}|BlogApp.Data\\BlogApp.Data.csproj|c:\\users\\public\\reposit\u00F3rio\\blog-repositorio-mba\\src\\blogapp.data\\repositories\\postrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FE6B1C92-DCAE-44A6-A707-D5A471F3F4BE}|BlogApp.Data\\BlogApp.Data.csproj|solutionrelative:blogapp.data\\repositories\\postrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BAD3503E-E3E7-4005-8F63-7AB8218C255D}|BlogApp.API\\BlogApp.API.csproj|c:\\users\\public\\reposit\u00F3rio\\blog-repositorio-mba\\src\\blogapp.api\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BAD3503E-E3E7-4005-8F63-7AB8218C255D}|BlogApp.API\\BlogApp.API.csproj|solutionrelative:blogapp.api\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,11 +46,128 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Startup.cs",
+              "DocumentMoniker": "C:\\Users\\Public\\reposit\u00F3rio\\blog-repositorio-mba\\src\\BlogApp.MVC\\Startup.cs",
+              "RelativeDocumentMoniker": "BlogApp.MVC\\Startup.cs",
+              "ToolTip": "C:\\Users\\Public\\reposit\u00F3rio\\blog-repositorio-mba\\src\\BlogApp.MVC\\Startup.cs",
+              "RelativeToolTip": "BlogApp.MVC\\Startup.cs",
+              "ViewState": "AgIAACwAAAAAAAAAAAAkwAEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-14T07:30:42.902Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "UserRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Public\\reposit\u00F3rio\\blog-repositorio-mba\\src\\BlogApp.Data\\Repositories\\UserRepository.cs",
+              "RelativeDocumentMoniker": "BlogApp.Data\\Repositories\\UserRepository.cs",
+              "ToolTip": "C:\\Users\\Public\\reposit\u00F3rio\\blog-repositorio-mba\\src\\BlogApp.Data\\Repositories\\UserRepository.cs",
+              "RelativeToolTip": "BlogApp.Data\\Repositories\\UserRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-14T07:30:33.391Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\Public\\reposit\u00F3rio\\blog-repositorio-mba\\src\\BlogApp.Domain\\Entities\\User.cs",
+              "RelativeDocumentMoniker": "BlogApp.Domain\\Entities\\User.cs",
+              "ToolTip": "C:\\Users\\Public\\reposit\u00F3rio\\blog-repositorio-mba\\src\\BlogApp.Domain\\Entities\\User.cs",
+              "RelativeToolTip": "BlogApp.Domain\\Entities\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-14T07:27:40.482Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "C:\\Users\\Public\\reposit\u00F3rio\\blog-repositorio-mba\\src\\BlogApp.MVC\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "BlogApp.MVC\\Controllers\\AccountController.cs",
+              "ToolTip": "C:\\Users\\Public\\reposit\u00F3rio\\blog-repositorio-mba\\src\\BlogApp.MVC\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "BlogApp.MVC\\Controllers\\AccountController.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAIwBcAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-14T07:25:24.708Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\Public\\reposit\u00F3rio\\blog-repositorio-mba\\src\\BlogApp.Data\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "BlogApp.Data\\Data\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\Public\\reposit\u00F3rio\\blog-repositorio-mba\\src\\BlogApp.Data\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "BlogApp.Data\\Data\\ApplicationDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwBUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-14T07:23:23.656Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\Public\\reposit\u00F3rio\\blog-repositorio-mba\\src\\BlogApp.API\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "BlogApp.API\\Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\Public\\reposit\u00F3rio\\blog-repositorio-mba\\src\\BlogApp.API\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "BlogApp.API\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAgwBYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-14T07:24:26.352Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "CommentRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Public\\reposit\u00F3rio\\blog-repositorio-mba\\src\\BlogApp.Data\\Repositories\\CommentRepository.cs",
+              "RelativeDocumentMoniker": "BlogApp.Data\\Repositories\\CommentRepository.cs",
+              "ToolTip": "C:\\Users\\Public\\reposit\u00F3rio\\blog-repositorio-mba\\src\\BlogApp.Data\\Repositories\\CommentRepository.cs",
+              "RelativeToolTip": "BlogApp.Data\\Repositories\\CommentRepository.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAcwCEAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-14T07:25:03.809Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "PostRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Public\\reposit\u00F3rio\\blog-repositorio-mba\\src\\BlogApp.Data\\Repositories\\PostRepository.cs",
+              "RelativeDocumentMoniker": "BlogApp.Data\\Repositories\\PostRepository.cs",
+              "ToolTip": "C:\\Users\\Public\\reposit\u00F3rio\\blog-repositorio-mba\\src\\BlogApp.Data\\Repositories\\PostRepository.cs",
+              "RelativeToolTip": "BlogApp.Data\\Repositories\\PostRepository.cs",
+              "ViewState": "AgIAACUAAAAAAAAAAAAgwAYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-14T07:24:46.932Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Startup.cs",
+              "DocumentMoniker": "C:\\Users\\Public\\reposit\u00F3rio\\blog-repositorio-mba\\src\\BlogApp.API\\Startup.cs",
+              "RelativeDocumentMoniker": "BlogApp.API\\Startup.cs",
+              "ToolTip": "C:\\Users\\Public\\reposit\u00F3rio\\blog-repositorio-mba\\src\\BlogApp.API\\Startup.cs",
+              "RelativeToolTip": "BlogApp.API\\Startup.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-14T07:24:11.191Z",
+              "EditorCaption": ""
             }
           ]
         }

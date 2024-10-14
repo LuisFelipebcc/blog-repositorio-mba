@@ -20,3 +20,16 @@ C:\Users\Luis Felipe\source\repos\src\BlogApp.Domain\obj\Debug\net8.0\BlogApp.Do
 C:\Users\Luis Felipe\source\repos\src\BlogApp.Domain\obj\Debug\net8.0\refint\BlogApp.Domain.dll
 C:\Users\Luis Felipe\source\repos\src\BlogApp.Domain\obj\Debug\net8.0\BlogApp.Domain.pdb
 C:\Users\Luis Felipe\source\repos\src\BlogApp.Domain\obj\Debug\net8.0\ref\BlogApp.Domain.dll
+C:\Users\Public\repositório\blog-repositorio-mba\src\BlogApp.Domain\obj\Debug\net8.0\BlogApp.Domain.csproj.AssemblyReference.cache
+C:\Users\Public\repositório\blog-repositorio-mba\src\BlogApp.Domain\obj\Debug\net8.0\BlogApp.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Public\repositório\blog-repositorio-mba\src\BlogApp.Domain\obj\Debug\net8.0\BlogApp.Domain.AssemblyInfoInputs.cache
+C:\Users\Public\repositório\blog-repositorio-mba\src\BlogApp.Domain\obj\Debug\net8.0\BlogApp.Domain.AssemblyInfo.cs
+C:\Users\Public\repositório\blog-repositorio-mba\src\BlogApp.Domain\obj\Debug\net8.0\BlogApp.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Public\repositório\blog-repositorio-mba\src\BlogApp.Domain\obj\Debug\net8.0\BlogApp.Domain.sourcelink.json
+C:\Users\Public\repositório\blog-repositorio-mba\src\BlogApp.Domain\obj\Debug\net8.0\BlogApp.Domain.dll
+C:\Users\Public\repositório\blog-repositorio-mba\src\BlogApp.Domain\obj\Debug\net8.0\refint\BlogApp.Domain.dll
+C:\Users\Public\repositório\blog-repositorio-mba\src\BlogApp.Domain\obj\Debug\net8.0\BlogApp.Domain.pdb
+C:\Users\Public\repositório\blog-repositorio-mba\src\BlogApp.Domain\bin\Debug\net8.0\BlogApp.Domain.deps.json
+C:\Users\Public\repositório\blog-repositorio-mba\src\BlogApp.Domain\bin\Debug\net8.0\BlogApp.Domain.dll
+C:\Users\Public\repositório\blog-repositorio-mba\src\BlogApp.Domain\bin\Debug\net8.0\BlogApp.Domain.pdb
+C:\Users\Public\repositório\blog-repositorio-mba\src\BlogApp.Domain\obj\Debug\net8.0\ref\BlogApp.Domain.dll
