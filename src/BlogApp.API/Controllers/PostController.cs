@@ -1,88 +1,96 @@
-﻿using BlogApp.Domain.Entities;
-using BlogApp.Services;
+﻿using BlogApp.Core.DbContext;
+using BlogApp.Core.Entities;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
-using System.Threading.Tasks;
+using Microsoft.EntityFrameworkCore;
 
-namespace BlogApp.API.Controllers
+namespace BlogApp.Api.Controllers
 {
-    [Route("api/[controller]")]
+    [Authorize(Roles = "User,Admin")]
     [ApiController]
+    [Route("api/[controller]")]
     public class PostController : ControllerBase
     {
-        private readonly PostService _postService;
+        private readonly ApplicationDbContext _context;
+        private readonly UserManager<Author> _userManager;
 
-        public PostController(PostService postService)
+        public PostController(ApplicationDbContext context, UserManager<Author> userManager)
         {
-            _postService = postService;
+            _context = context;
+            _userManager = userManager;
         }
 
-        // GET: api/post
+        [AllowAnonymous]
         [HttpGet]
-        public async Task<IActionResult> GetAllPosts()
+        public async Task<ActionResult<IEnumerable<Post>>> GetPosts()
         {
-            var posts = await _postService.GetAllPostsAsync();
-            return Ok(posts);
+            return await _context.Posts.Include(p => p.Author).ToListAsync();
         }
 
-        // GET: api/post/5
+        [AllowAnonymous]
         [HttpGet("{id}")]
-        public async Task<IActionResult> GetPostById(int id)
+        public async Task<ActionResult<Post>> GetPost(int id)
         {
-            var post = await _postService.GetPostByIdAsync(id);
-            if (post == null)
-            {
-                return NotFound();
-            }
-            return Ok(post);
+            var post = await _context.Posts.Include(p => p.Comments).FirstOrDefaultAsync(p => p.Id == id);
+            return post == null ? NotFound() : Ok(post);
         }
 
-        // POST: api/post
-        [Authorize]
         [HttpPost]
-        public async Task<IActionResult> CreatePost([FromBody] Post post)
+        public async Task<ActionResult<Post>> CreatePost(Post post)
         {
-            if (!ModelState.IsValid)
-            {
-                return BadRequest(ModelState);
-            }
+            var user = await _userManager.GetUserAsync(User);
+            post.AuthorId = user.Id;
 
-            await _postService.AddPostAsync(post);
-            return CreatedAtAction(nameof(GetPostById), new { id = post.Id }, post);
+            _context.Posts.Add(post);
+            await _context.SaveChangesAsync();
+
+            return CreatedAtAction(nameof(GetPost), new { id = post.Id }, post);
         }
 
-        // PUT: api/post/5
-        [Authorize]
         [HttpPut("{id}")]
-        public async Task<IActionResult> UpdatePost(int id, [FromBody] Post post)
+        public async Task<IActionResult> UpdatePost(int id, Post post)
         {
-            if (!ModelState.IsValid)
-            {
-                return BadRequest(ModelState);
-            }
+            if (id != post.Id)
+                return BadRequest();
 
-            var existingPost = await _postService.GetPostByIdAsync(id);
+            var existingPost = await _context.Posts.FindAsync(id);
             if (existingPost == null)
-            {
                 return NotFound();
-            }
 
-            await _postService.UpdatePostAsync(post);
+            var user = await _userManager.GetUserAsync(User);
+            var isAdmin = await _userManager.IsInRoleAsync(user, "Admin");
+
+            if (existingPost.AuthorId != user.Id && !isAdmin)
+                return Forbid();
+
+            // Atualiza as propriedades permitidas
+            existingPost.Title = post.Title;
+            existingPost.Content = post.Content;
+            existingPost.PublishedDate = post.PublishedDate;
+
+            _context.Entry(existingPost).State = EntityState.Modified;
+            await _context.SaveChangesAsync();
+
             return NoContent();
         }
 
-        // DELETE: api/post/5
-        [Authorize(Roles = "Admin")]
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeletePost(int id)
         {
-            var existingPost = await _postService.GetPostByIdAsync(id);
-            if (existingPost == null)
-            {
+            var post = await _context.Posts.FindAsync(id);
+            if (post == null)
                 return NotFound();
-            }
 
-            await _postService.DeletePostAsync(id);
+            var user = await _userManager.GetUserAsync(User);
+            var isAdmin = await _userManager.IsInRoleAsync(user, "Admin");
+
+            if (post.AuthorId != user.Id && !isAdmin)
+                return Forbid();
+
+            _context.Posts.Remove(post);
+            await _context.SaveChangesAsync();
+
             return NoContent();
         }
     }

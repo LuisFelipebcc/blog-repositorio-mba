@@ -1,88 +1,97 @@
-﻿using BlogApp.Domain.Entities;
-using BlogApp.Services;
+﻿using BlogApp.Core.DbContext;
+using BlogApp.Core.Entities;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
-namespace BlogApp.API.Controllers
+namespace BlogApp.Api.Controllers
 {
-    [Route("api/[controller]")]
+    [Authorize(Roles = "User,Admin")]
     [ApiController]
+    [Route("api/[controller]")]
     public class CommentController : ControllerBase
     {
-        private readonly CommentService _commentService;
+        private readonly ApplicationDbContext _context;
+        private readonly UserManager<Author> _userManager;
 
-        public CommentController(CommentService commentService)
+        public CommentController(ApplicationDbContext context, UserManager<Author> userManager)
         {
-            _commentService = commentService;
+            _context = context;
+            _userManager = userManager;
         }
 
-        // GET: api/comment/post/5
-        [HttpGet("post/{postId}")]
-        public async Task<IActionResult> GetCommentsByPostId(int postId)
+        [AllowAnonymous]
+        [HttpGet]
+        public async Task<ActionResult<IEnumerable<Comment>>> GetComments()
         {
-            var comments = await _commentService.GetCommentsByPostIdAsync(postId);
-            return Ok(comments);
+            return await _context.Comments.Include(c => c.Post).ToListAsync();
         }
 
-        // GET: api/comment/5
+        [AllowAnonymous]
         [HttpGet("{id}")]
-        public async Task<IActionResult> GetCommentById(int id)
+        public async Task<ActionResult<Comment>> GetComment(int id)
         {
-            var comment = await _commentService.GetCommentByIdAsync(id);
-            if (comment == null)
-            {
-                return NotFound();
-            }
-            return Ok(comment);
+            var comment = await _context.Comments.FindAsync(id);
+            return comment == null ? NotFound() : Ok(comment);
         }
 
-        // POST: api/comment
-        [Authorize]
         [HttpPost]
-        public async Task<IActionResult> CreateComment([FromBody] Comment comment)
+        public async Task<ActionResult<Comment>> CreateComment(Comment comment)
         {
-            if (!ModelState.IsValid)
-            {
-                return BadRequest(ModelState);
-            }
+            var user = await _userManager.GetUserAsync(User);
+            comment.AuthorId = user.Id;
 
-            await _commentService.AddCommentAsync(comment);
-            return CreatedAtAction(nameof(GetCommentById), new { id = comment.Id }, comment);
+            _context.Comments.Add(comment);
+            await _context.SaveChangesAsync();
+
+            return CreatedAtAction(nameof(GetComment), new { id = comment.Id }, comment);
         }
 
-        // PUT: api/comment/5
-        [Authorize]
         [HttpPut("{id}")]
-        public async Task<IActionResult> UpdateComment(int id, [FromBody] Comment comment)
+        public async Task<IActionResult> UpdateComment(int id, Comment comment)
         {
-            if (!ModelState.IsValid)
-            {
-                return BadRequest(ModelState);
-            }
+            if (id != comment.Id)
+                return BadRequest();
 
-            var existingComment = await _commentService.GetCommentByIdAsync(id);
+            var existingComment = await _context.Comments.FindAsync(id);
             if (existingComment == null)
-            {
                 return NotFound();
-            }
 
-            await _commentService.UpdateCommentAsync(comment);
+            var user = await _userManager.GetUserAsync(User);
+            var isAdmin = await _userManager.IsInRoleAsync(user, "Admin");
+
+            if (existingComment.AuthorId != user.Id && !isAdmin)
+                return Forbid();
+
+            // Atualiza as propriedades permitidas
+            existingComment.Content = comment.Content;
+            existingComment.CommentedDate = comment.CommentedDate;
+
+            _context.Entry(existingComment).State = EntityState.Modified;
+            await _context.SaveChangesAsync();
+
             return NoContent();
         }
 
-        // DELETE: api/comment/5
-        [Authorize(Roles = "Admin")]
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteComment(int id)
         {
-            var existingComment = await _commentService.GetCommentByIdAsync(id);
-            if (existingComment == null)
-            {
+            var comment = await _context.Comments.FindAsync(id);
+            if (comment == null)
                 return NotFound();
-            }
 
-            await _commentService.DeleteCommentAsync(id);
+            var user = await _userManager.GetUserAsync(User);
+            var isAdmin = await _userManager.IsInRoleAsync(user, "Admin");
+
+            if (comment.AuthorId != user.Id && !isAdmin)
+                return Forbid();
+
+            _context.Comments.Remove(comment);
+            await _context.SaveChangesAsync();
+
             return NoContent();
         }
     }
+
 }
